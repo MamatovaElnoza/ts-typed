@@ -24,3 +24,47 @@ button.addEventListener('click', () => {
 });
 
 //  console.log(button);
+
+// =========== SAMMI PROJECT
+enum Website {
+  YouTube = 'YouTube',
+  Instagram = 'Instagram',
+}
+
+let person : {
+  id: number
+  name: string
+  isMarried: boolean
+  username: string
+  email: string[]
+  address: {
+    street: string
+    suite:string
+    zipcode: string | number
+    geo: [number, number]
+  }
+  phone: number
+  website: Website
+  company: {
+    name: string
+    bs: string
+  }
+} = {
+  id: 1,
+  name: "Leanne Graham",
+  isMarried: false,
+  username: 'Bret',
+  email: ['elnoza@gmail.com', 'islom@gmail.com'],
+  address: {
+    street: "Kulas Light",
+    suite:'Apt. 556',
+    zipcode: 92998-3874,
+    geo: [-37.3159, 81.1496],
+  },
+  phone: 1-770-736-80315644,
+  website: Website.Instagram,
+  company: {
+    name: 'Romaguera-Crona',
+    bs: 'harness real-time e-markets',
+  },
+}
