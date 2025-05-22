@@ -107,3 +107,10 @@ const code: [string, number] = ['xxzzz', 97.00]
 code[0]
 //6
 const tags: readonly string[] = ["bug", "butterfly", "urgent"];
+//7
+enum Signal {
+  Red,
+  Yellow,
+  Green
+}
+console.log(Signal.Green);

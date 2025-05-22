@@ -82,3 +82,11 @@ const code = ['xxzzz', 97.00];
 code[0];
 //6
 const tags = ["bug", "butterfly", "urgent"];
+//7
+var Signal;
+(function (Signal) {
+    Signal[Signal["Red"] = 0] = "Red";
+    Signal[Signal["Yellow"] = 1] = "Yellow";
+    Signal[Signal["Green"] = 2] = "Green";
+})(Signal || (Signal = {}));
+console.log(Signal.Green);
