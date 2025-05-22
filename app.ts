@@ -105,3 +105,5 @@ console.log(score);
 //5
 const code: [string, number] = ['xxzzz', 97.00]
 code[0]
+//6
+const tags: readonly string[] = ["bug", "butterfly", "urgent"];

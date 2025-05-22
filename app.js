@@ -80,3 +80,5 @@ console.log(score);
 //5
 const code = ['xxzzz', 97.00];
 code[0];
+//6
+const tags = ["bug", "butterfly", "urgent"];
