@@ -56,3 +56,12 @@ let person = {
         bs: 'harness real-time e-markets',
     },
 };
+//sammi module 1 all tasks
+let planet = 'neptun';
+let moons = 2;
+let isMarried = false;
+console.log(typeof moons);
+function points(a, b) {
+    return a * b;
+}
+console.log(points(2, 5));

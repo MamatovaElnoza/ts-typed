@@ -86,3 +86,8 @@ let planet: string = 'neptun'
 let moons: number = 2
 let isMarried: boolean = false
 console.log(typeof moons);
+
+function points(a:number, b:number):number |string {
+  return a * b
+}
+console.log(points(2,5));
