@@ -97,3 +97,8 @@ let gadget: {model: string; battery: number; waterproof: boolean} = {
   battery: 85,
   waterproof: false
 }
+//4
+const scores: number[] = [88, 76, 91, 100];
+let score = scores
+score.push(20)
+console.log(score);

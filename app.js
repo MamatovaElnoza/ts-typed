@@ -72,3 +72,8 @@ let gadget = {
     battery: 85,
     waterproof: false
 };
+//4
+const scores = [88, 76, 91, 100];
+let score = scores;
+score.push(20);
+console.log(score);
