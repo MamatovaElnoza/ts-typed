@@ -86,8 +86,14 @@ let planet: string = 'neptun'
 let moons: number = 2
 let isMarried: boolean = false
 console.log(typeof moons);
-
+// 2
 function points(a:number, b:number):number |string {
   return a * b
 }
 console.log(points(2,5));
+//3
+let gadget: {model: string; battery: number; waterproof: boolean} = {
+  model: 'nokia',
+  battery: 85,
+  waterproof: false
+}

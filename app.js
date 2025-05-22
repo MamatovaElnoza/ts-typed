@@ -61,7 +61,14 @@ let planet = 'neptun';
 let moons = 2;
 let isMarried = false;
 console.log(typeof moons);
+// 2
 function points(a, b) {
     return a * b;
 }
 console.log(points(2, 5));
+//3
+let gadget = {
+    model: 'nokia',
+    battery: 85,
+    waterproof: false
+};
