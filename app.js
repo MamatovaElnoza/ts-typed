@@ -6,15 +6,15 @@ const button = document.querySelector('.button');
 const result1 = document.querySelector('.result1');
 const result2 = document.querySelector('.result2');
 const resultpassword = document.querySelector('.password-result');
-function changes(value) {
+function changes(val) {
     let output = '';
-    for (let index = 0; index < value.length; index++) {
-        const letter = value[index];
+    for (let index = 0; index < val.length; index++) {
+        const letter = val[index];
         output += (letter === letter.toLowerCase()) ? letter.toUpperCase() : letter.toLowerCase();
     }
     return output;
 }
-// function changes(value: string) {
+// function changes(value: string) :string {
 //     return [...value]
 //     .map(letter => (letter === letter.toLowerCase() ? letter.toUpperCase() : letter.toLowerCase()))
 //     .join('');
@@ -27,7 +27,9 @@ function isValidPassword(pw) {
 button.addEventListener('click', () => {
     result1.textContent = changes(input1.value);
     result2.textContent = changes(input2.value);
-    resultpassword.textContent = isValidPassword(input3.value) ? 'valid!' : '10 characters, 1 symbol, 1 uppercase';
+    const valid = isValidPassword(input3.value);
+    resultpassword.textContent = valid ? 'valid!' : '10 characters, 1 symbol, 1 uppercase';
+    resultpassword.style.color = valid ? 'green' : 'red';
 });
 // =========== SAMMI PROJECT
 var Website;
