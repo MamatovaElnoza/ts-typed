@@ -80,3 +80,9 @@ let person: {
     bs: 'harness real-time e-markets',
   },
 }
+
+//sammi module 1 all tasks
+let planet: string = 'neptun'
+let moons: number = 2
+let isMarried: boolean = false
+console.log(typeof moons);
