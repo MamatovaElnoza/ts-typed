@@ -102,3 +102,6 @@ const scores: number[] = [88, 76, 91, 100];
 let score = scores
 score.push(20)
 console.log(score);
+//5
+const code: [string, number] = ['xxzzz', 97.00]
+code[0]
