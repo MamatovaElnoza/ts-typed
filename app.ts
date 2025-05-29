@@ -182,32 +182,40 @@
 
 //   }
 
-  // const average = calculateAverage(grades);
-  // console.log(`O'rtacha baho: ${average.toFixed(2)}`);
+// const average = calculateAverage(grades);
+// console.log(`O'rtacha baho: ${average.toFixed(2)}`);
 // }
 
 
 
+//27.05.25
 
 // let info: 100 | 199
 // let success: 200 | 299
 // let redirect: 300 | 399
 // let client: 400 | 499
 // let error: 500 | 599
-function code(code: 100 | 200 | 300 |400 |500) {
-  if (code === 100) {
-  console.log('Informational responses');
-} else if (code === 200){
-  console.log('Successful respponses');
-}else if (code=== 300){
-  console.log('Redirection messages');
-}else if (code=== 400){
-  console.log('Client error respponses');
-}else if (code===500){
-  console.log('Server error respponses');
-}else {
-  console.log('wtf is this?');
-  
+function code(code: 100 | 101 | 102 | 103
+  | 200 | 201 | 202 | 203 | 204 | 205 | 206 | 207 | 208 | 226
+  | 300 | 301 | 302 | 303 | 304 | 305 | 306 | 307 | 308
+  | 400 | 401 | 402 | 403 | 404 | 405 | 406 | 407 | 408 | 409
+  | 410 | 411 | 412 | 413 | 414 | 415 | 416 | 417 | 418 | 421
+  | 422 | 423 | 424 | 425 | 426 | 428 | 429 | 431 | 451
+  | 500 | 501 | 502 | 503 | 504 | 505 | 506 | 507 | 508 | 510 | 511) {
+  if (code >= 100 && code <= 199) {
+    console.log('Informational responses');
+  } else if (code >= 200 && code <= 299) {
+    console.log('Successful respponses');
+  } else if (code >= 300 && code <= 399) {
+    console.log('Redirection messages');
+  } else if (code >= 400 && code <= 499) {
+    console.log('Client error respponses');
+  } else if (code >= 500 && code <= 599) {
+    console.log('Server error respponses');
+  } else {
+    console.log('wt is this?');
+
+  }
 }
-}
-code(300)
+// const code = 202
+code(503);

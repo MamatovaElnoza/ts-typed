@@ -159,29 +159,31 @@
 // const average = calculateAverage(grades);
 // console.log(`O'rtacha baho: ${average.toFixed(2)}`);
 // }
+//27.05.25
 // let info: 100 | 199
 // let success: 200 | 299
 // let redirect: 300 | 399
 // let client: 400 | 499
 // let error: 500 | 599
 function code(code) {
-    if (code === 100) {
+    if (code >= 100 && code <= 199) {
         console.log('Informational responses');
     }
-    else if (code === 200) {
+    else if (code >= 200 && code <= 299) {
         console.log('Successful respponses');
     }
-    else if (code === 300) {
+    else if (code >= 300 && code <= 399) {
         console.log('Redirection messages');
     }
-    else if (code === 400) {
+    else if (code >= 400 && code <= 499) {
         console.log('Client error respponses');
     }
-    else if (code === 500) {
+    else if (code >= 500 && code <= 599) {
         console.log('Server error respponses');
     }
     else {
-        console.log('wtf is this?');
+        console.log('wt is this?');
     }
 }
-code(300);
+// const code = 202
+code(503);
