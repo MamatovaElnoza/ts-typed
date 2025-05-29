@@ -219,3 +219,16 @@ function code(code: 100 | 101 | 102 | 103
 }
 // const code = 202
 code(503);
+
+
+type Status = "success" | "error";
+
+function handle(status: Status) {
+  if (status === "success") {
+    console.log("All good!");
+  } else if (status === "error") {
+    console.log("Something went wrong!");
+  } else {
+    const check: never = status;
+  }
+}
